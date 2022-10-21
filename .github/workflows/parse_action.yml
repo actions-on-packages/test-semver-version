@@ -1,0 +1,13 @@
+name: 'Parse Action.yml'
+on: # rebuild any PRs and main branch changes
+  workflow_dispatch:
+
+jobs:
+  Parse-Action-Yml: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out!
+        uses: actions/checkout@v3
+        
+      - name: Read action.yml version
+        run: yq 'version' action.yml
