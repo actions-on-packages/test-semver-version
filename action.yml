@@ -1,13 +1,13 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Test semver version passing'
+description: 'try to define semver tag'
+author: 'Aditya Srinivas'
+version: '1.0.0'
 
 inputs:
   milliseconds: # change this
     required: true
     description: 'input description here'
     default: 'default value if applicable'
-  version: '1.0.0'
  
 runs:
   using: 'node16'
